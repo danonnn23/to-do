@@ -1,9 +1,15 @@
 :root {
     --primary-bg-clr: hsl(208, 71%, 55%);
     --secondary-bg-clr: hsl(0, 0%, 90%);
+    --tertiary-bg-clr: hsl(208, 71%, 85%);
+
+    --tertiary-bg-clr-hover: hsl(208, 71%, 80%);
 
     --primary-fg-clr: hsl(0, 0%, 95%);
-    --secondary-fg-clr: hsl(0, 0%, 15%);
+    --secondary-fg-clr: hsl(208, 70%, 45%);
+    --tertiary-fg-clr: hsl(0, 0%, 10%);
+    --deactivated-fg-clr: hsl(0, 0%, 60%);
 
     --primary-fg-clr-hover: hsl(0, 0%, 80%);
+    --secondary-fg-clr-hover: hsl(208, 70%, 45%);
 }
