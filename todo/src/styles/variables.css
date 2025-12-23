@@ -1,0 +1,9 @@
+:root {
+    --primary-bg-clr: hsl(208, 71%, 55%);
+    --secondary-bg-clr: hsl(0, 0%, 90%);
+
+    --primary-fg-clr: hsl(0, 0%, 95%);
+    --secondary-fg-clr: hsl(0, 0%, 15%);
+
+    --primary-fg-clr-hover: hsl(0, 0%, 80%);
+}

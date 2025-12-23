@@ -1,0 +1,6 @@
+.task-list-container {
+    width: 750px;
+    height: 80vh;
+    background-color: var(--secondary-bg-clr);
+    border-radius: 25px;
+}

@@ -1,0 +1,38 @@
+.header-container {
+    width: 100%;
+    height: 75px;
+    background-color: var(--primary-bg-clr);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner {
+    font-size: 2em;
+    color: var(--primary-fg-clr);
+    margin-left: 15px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    cursor: pointer;
+}
+
+.settings-icon {
+    color: var(--primary-fg-clr);
+    font-size: 3em;
+    transition: all 0.5s ease;
+}   
+
+.settings-icon:hover {
+    color: var(--primary-fg-clr-hover);
+}
+
+.settings-btn {
+    margin-left: auto;
+    margin-right: 15px;
+}
