@@ -11,8 +11,6 @@ function formatToday() {
   });
 }
 
-
-
     return (
         <>
             <div className='task-list-container'>
@@ -32,12 +30,10 @@ function formatToday() {
                     </button>
                 </div>
                 <div className='task-list'>
-                    <TaskItem></TaskItem>
-                    <TaskItem></TaskItem>
-                    <TaskItem></TaskItem>
-                    <TaskItem></TaskItem>
-                    <TaskItem></TaskItem>
-                    <TaskItem></TaskItem>
+                    <TaskItem title="Work" description="" day="Today" time="13:45"></TaskItem>
+                    <TaskItem title="Buy milk" description="1 pack only" day="Today" time="17:15"></TaskItem>
+                    <TaskItem title="Do homework" description="Math and English" day="Today" time="13:00"></TaskItem>
+                    <TaskItem title="Walk with dog" description="" day="Today" time="16:30"></TaskItem>
                 </div>
             </div>
         </>
