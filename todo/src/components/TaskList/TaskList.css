@@ -208,7 +208,8 @@
     margin-top: 10vh;
 }
 
-.create-bg {
+.create-bg,
+.edit-bg {
     position: fixed;
     inset: 0; /* заміна top/left/width/height */
     background-color: var(--filter-bg-clr);
@@ -224,7 +225,8 @@ textarea {
   resize: none;
 }
 
-.create-bg.active {
+.create-bg.active,
+.edit-bg.active {
     display: flex;
 }
 
@@ -267,6 +269,23 @@ textarea {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+    border-radius: 5px;
+}
+
+.time-input::-webkit-calendar-picker-indicator {
+    border-radius: 50%;
+}
+
+.date-input::-webkit-calendar-picker-indicator:hover {
+    background-color: var(--primary-bg-clr);
+}
+
+.time-input::-webkit-calendar-picker-indicator:hover {
+    background-color: var(--primary-bg-clr);
 }
 
 .time-input {
@@ -315,8 +334,14 @@ textarea {
     color: var(--primary-fg-clr);
 }
 
+.delete-btn {
+    background-color: var(--danger-bg-clr);
+    color: white;
+}
+
 .cancel-btn,
-.apply-btn {
+.apply-btn,
+.delete-btn {
     font-size: 1.3em;
     padding: 5px 10px;
     width: 100px;
@@ -330,6 +355,10 @@ textarea {
 
 .cancel-btn:hover {
     background-color: var(--tertiary-bg-clr-hover);
+}
+
+.delete-btn:hover {
+    background-color: var(--danger-bg-clr-hover);
 }
 
 .task-data-window form .actions {

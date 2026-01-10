@@ -4,6 +4,7 @@
     --tertiary-bg-clr: hsl(208, 71%, 85%);
     --primary-task-bg-clr: hsl(0, 0%, 100%);
     --filter-bg-clr: hsla(0, 0%, 0%, 0.3);
+    --danger-bg-clr: hsl(0, 100%, 60%);
 
     --tertiary-bg-clr-hover: hsl(208, 71%, 80%);
 
@@ -17,4 +18,5 @@
     --secondary-fg-clr-hover: hsl(208, 70%, 45%);
     --primary-bg-clr-hover: hsl(208, 71%, 45%);
     --tertiary-bg-clr-hover: hsl(208, 71%, 75%);
+    --danger-bg-clr-hover: hsl(0, 100%, 45%);
 }

@@ -5,20 +5,7 @@ import CreateTaskModal from "./CreateTaskModal.jsx";
 
 function TaskList({}) {
     const [section, setSection] = useState("today");
-
     const [isCreateOpen, setIsCreateOpen] = useState(false);
-
-    function handleCreateTask(taskData) {
-        setTasks(prev => [
-            ...prev,
-            {
-                id: crypto.randomUUID(),
-                completed: false,
-                ...taskData,
-            },
-        ]);
-    }
-
     const [tasks, setTasks] = useState([
         {
             id: 1,
@@ -42,6 +29,31 @@ function TaskList({}) {
             completed: false,
         },
     ]);
+
+    function handleSaveTask(updatedTask) {
+        setTasks(prev =>
+            prev.map(task =>
+                task.id === updatedTask.id ? updatedTask : task
+            )
+        );
+    }
+
+    function handleDeleteTask(taskId) {
+        setTasks(prev =>
+            prev.filter(task => task.id !== taskId)
+        );
+    }
+
+    function handleCreateTask(taskData) {
+        setTasks(prev => [
+            ...prev,
+            {
+                id: crypto.randomUUID(),
+                completed: false,
+                ...taskData,
+            },
+        ]);
+    }
 
     function getTaskSection(dueAt) {
         const today = new Date();
@@ -109,10 +121,10 @@ function TaskList({}) {
 
                         {filteredTasks.map(task => (
                             <TaskItem
-                                key={task.id}   // ← ОБОВʼЯЗКОВО
-                                title={task.title}
-                                description={task.description}
-                                iso={task.dueAt}
+                                key={task.id}
+                                task={task}
+                                onSaveTask={handleSaveTask}
+                                onDeleteTask={handleDeleteTask}
                             />
                         ))}
 
