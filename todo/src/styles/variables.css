@@ -3,6 +3,7 @@
     --secondary-bg-clr: hsl(0, 0%, 90%);
     --tertiary-bg-clr: hsl(208, 71%, 85%);
     --primary-task-bg-clr: hsl(0, 0%, 100%);
+    --filter-bg-clr: hsla(0, 0%, 0%, 0.3);
 
     --tertiary-bg-clr-hover: hsl(208, 71%, 80%);
 
@@ -14,4 +15,6 @@
 
     --primary-fg-clr-hover: hsl(0, 0%, 80%);
     --secondary-fg-clr-hover: hsl(208, 70%, 45%);
+    --primary-bg-clr-hover: hsl(208, 71%, 45%);
+    --tertiary-bg-clr-hover: hsl(208, 71%, 75%);
 }

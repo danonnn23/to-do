@@ -11,3 +11,7 @@
     height: 100vh;
     gap: 5vh;
 }
+
+body {
+    height: 300vh;
+}

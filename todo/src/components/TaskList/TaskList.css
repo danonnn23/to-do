@@ -140,6 +140,8 @@
     flex-direction: row;
     gap: 10px;
     margin-top: 3px;
+    color: var(--deactivated-fg-clr);
+    font-weight: bold;
 }
 
 .task-time .day {
@@ -162,4 +164,175 @@
 .task-item.completed .task-title {
     text-decoration: line-through;
     color: var(--completed-fg-clr);
+}
+
+
+.not-active-section {
+    display: none;
+}
+
+.task-data-bg {
+    position: fixed;
+    inset: 0; /* заміна top/left/width/height */
+    background-color: var(--filter-bg-clr);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.task-data-active {
+    display: flex;
+}
+
+.task-data-window {
+    width: 30vw;
+    height: 50vh;
+    background-color: var(--primary-task-bg-clr);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-data-window h2 {
+    margin-top: 20px;
+    color: var(--tertiary-fg-clr);
+}
+
+.task-list .empty {
+    font-size: 1.5em;
+    margin-top: 10vh;
+}
+
+.create-bg {
+    position: fixed;
+    inset: 0; /* заміна top/left/width/height */
+    background-color: var(--filter-bg-clr);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+textarea {
+  resize: none;
+}
+
+.create-bg.active {
+    display: flex;
+}
+
+.task-data-window form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    gap: 20px;
+}
+
+.title-input {
+    border: none;
+    border-bottom: 3px solid var(--tertiary-bg-clr);
+    font-size: 1.7em;
+    transition: all 0.4s ease;
+}
+
+.title-input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--primary-bg-clr);
+}
+
+.date-input {
+    border: none;
+    background-color: var(--tertiary-bg-clr);
+    width: max-content;
+    height: 25px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+
+.date-input:focus {
+   border: 3px solid var(--primary-bg-clr);
+}
+
+::-webkit-calendar-picker-indicator {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.time-input {
+    border: none;
+    background-color: var(--tertiary-bg-clr);
+    width: max-content;
+    height: 25px;
+    padding: 10px   15px;
+    outline: none;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+
+.time-input:focus {
+   border: 3px solid var(--primary-bg-clr);
+}
+
+.date-time-field {
+    display: flex;
+    gap: 25px;
+}
+
+.description-input {
+    border: none;
+    background-color: var(--tertiary-bg-clr);
+    border-bottom: 3px solid var(--tertiary-bg-clr);
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: all 0.4s ease;
+    height: 125px;
+    padding: 10px;
+}
+
+.description-input:focus {
+    outline: none;
+    border-bottom: 3px solid var(--primary-bg-clr);
+}
+
+.cancel-btn {
+    background-color: var(--tertiary-bg-clr);
+}
+
+.apply-btn {
+    background-color: var(--primary-bg-clr);
+    color: var(--primary-fg-clr);
+}
+
+.cancel-btn,
+.apply-btn {
+    font-size: 1.3em;
+    padding: 5px 10px;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: var(--primary-bg-clr-hover);
+}
+
+.cancel-btn:hover {
+    background-color: var(--tertiary-bg-clr-hover);
+}
+
+.task-data-window form .actions {
+    display: flex;
+    gap: 10px;
 }
