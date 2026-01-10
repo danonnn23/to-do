@@ -12,6 +12,11 @@
     gap: 5vh;
 }
 
-body {
-    height: 300vh;
+.btn {
+    background-color: transparent;
+    border: 0;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    cursor: pointer;
 }

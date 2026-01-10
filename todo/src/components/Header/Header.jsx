@@ -5,11 +5,15 @@ function Header() {
         <>
             <header className='header-container'>
                 <h2 className='banner'>TO DO</h2>
-                <button className='settings-btn btn'>
-                    <span className="material-symbols-outlined settings-icon">
-                        settings
+                <input type="checkbox" id='darkmode-toggle'/>
+                <label htmlFor="darkmode-toggle">
+                    <span class="material-symbols-outlined sun-icon theme-icon">
+                        light_mode
                     </span>
-                </button>
+                    <span class="material-symbols-outlined moon-icon theme-icon">
+                        dark_mode
+                    </span>
+                </label>
             </header>
         </>
     )
