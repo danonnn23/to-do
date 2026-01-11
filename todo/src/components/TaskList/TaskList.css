@@ -110,6 +110,12 @@
     margin-top: 3px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-align: left;
 }
 
 .task-description {
@@ -118,6 +124,12 @@
     margin-bottom: 3px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-align: left;
 }
 
 .check-area {
@@ -204,8 +216,9 @@
 }
 
 .task-list .empty {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-top: 10vh;
+    color: var(--empty-list-clr);
 }
 
 .create-bg,
@@ -242,6 +255,8 @@ textarea {
     border-bottom: 3px solid var(--tertiary-bg-clr);
     font-size: 1.7em;
     transition: all 0.4s ease;
+    background-color: transparent;
+    color: var(--input-fg-clr);
 }
 
 .title-input:focus {
@@ -259,6 +274,7 @@ textarea {
     font-size: 0.9em;
     border-radius: 5px;
     border: 3px solid transparent;
+    color: var(--input-fg-clr);
 }
 
 .date-input:focus {
@@ -298,6 +314,7 @@ textarea {
     font-size: 0.9em;
     border-radius: 5px;
     border: 3px solid transparent;
+    color: var(--input-fg-clr);
 }
 
 .time-input:focus {
@@ -318,6 +335,7 @@ textarea {
     transition: all 0.4s ease;
     height: 125px;
     padding: 10px;
+    color: var(--input-fg-clr);
 }
 
 .description-input:focus {
@@ -326,17 +344,18 @@ textarea {
 }
 
 .cancel-btn {
-    background-color: var(--tertiary-bg-clr);
+    background-color: var(--cancel-bg-clr);
+    color: var(--cancel-fg-clr);
 }
 
 .apply-btn {
-    background-color: var(--primary-bg-clr);
-    color: var(--primary-fg-clr);
+    background-color: var(--apply-bg-clr);
+    color: var(--apply-fg-clr);
 }
 
 .delete-btn {
-    background-color: var(--danger-bg-clr);
-    color: white;
+    background-color: var(--delete-bg-clr);
+    color: var(--delete-fg-clr);
 }
 
 .cancel-btn,
@@ -350,15 +369,15 @@ textarea {
 }
 
 .apply-btn:hover {
-    background-color: var(--primary-bg-clr-hover);
+    background-color: var(--apply-bg-clr-hover);
 }
 
 .cancel-btn:hover {
-    background-color: var(--tertiary-bg-clr-hover);
+    background-color: var(--cancel-bg-clr-hover);
 }
 
 .delete-btn:hover {
-    background-color: var(--danger-bg-clr-hover);
+    background-color: var(--delete-bg-clr-hover);
 }
 
 .task-data-window form .actions {

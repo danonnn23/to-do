@@ -4,7 +4,10 @@
     --tertiary-bg-clr: hsl(208, 71%, 85%);
     --primary-task-bg-clr: hsl(0, 0%, 100%);
     --filter-bg-clr: hsla(0, 0%, 0%, 0.3);
-    --danger-bg-clr: hsl(0, 100%, 60%);
+    --bg-clr: hsl(0, 0%, 100%);
+    --cancel-bg-clr: hsl(225, 14%, 30%);
+    --apply-bg-clr: hsl(207, 100%, 53%);
+    --delete-bg-clr: hsl(0, 75%, 55%);
 
     --tertiary-bg-clr-hover: hsl(208, 71%, 80%);
 
@@ -13,10 +16,52 @@
     --tertiary-fg-clr: hsl(0, 0%, 10%);
     --deactivated-fg-clr: hsl(0, 0%, 60%);
     --completed-fg-clr: hsl(0, 0%, 45%);
+    --empty-list-clr: hsl(0, 0%, 10%);
+    --cancel-fg-clr: hsl(215, 27%, 85%);
+    --apply-fg-clr: hsl(0, 0%, 0%);
+    --delete-fg-clr: hsl(0, 94%, 13%);
+    --input-fg-clr: hsl(0, 0%, 0%);
+    --checkbox-fg-clr: hsl(0, 0%, 5%);
 
     --primary-fg-clr-hover: hsl(0, 0%, 80%);
     --secondary-fg-clr-hover: hsl(208, 70%, 45%);
     --primary-bg-clr-hover: hsl(208, 71%, 45%);
     --tertiary-bg-clr-hover: hsl(208, 71%, 75%);
-    --danger-bg-clr-hover: hsl(0, 100%, 45%);
+    --apply-bg-clr-hover: hsl(207, 100%, 40%);
+    --cancel-bg-clr-hover: hsl(225, 14%, 23%);
+    --delete-bg-clr-hover: hsl(0, 75%, 45%);
+}
+
+[data-theme="dark"] {
+    --primary-bg-clr: hsl(208, 48%, 31%);
+    --secondary-bg-clr: hsl(213, 14%, 38%);
+    --tertiary-bg-clr: hsl(207, 36%, 30%);
+    --primary-task-bg-clr: hsl(212, 36%, 23%);
+    --filter-bg-clr: hsla(0, 0%, 0%, 0.3);
+    --bg-clr: hsl(208, 32%, 17%);
+    --cancel-bg-clr: hsl(225, 14%, 17%);
+    --apply-bg-clr: hsl(207, 100%, 53%);
+    --delete-bg-clr: hsl(0, 75%, 50%);
+
+    --tertiary-bg-clr-hover: hsl(208, 71%, 80%);
+
+    --primary-fg-clr: hsl(0, 0%, 100%);
+    --secondary-fg-clr: hsl(196, 91%, 10%);
+    --tertiary-fg-clr: hsl(0, 0%, 100%);
+    --deactivated-fg-clr: hsl(0, 0%, 75%);
+    --completed-fg-clr: hsl(0, 0%, 45%);
+    --empty-list-clr: hsl(0, 0%, 95%);
+    --cancel-fg-clr: hsl(215, 27%, 85%);
+    --apply-fg-clr: hsl(0, 0%, 0%);
+    --delete-fg-clr: hsl(0, 94%, 13%);
+    --input-fg-clr: hsl(0, 0%, 100%);
+    --checkbox-fg-clr: hsl(0, 0%, 95%);
+
+    --primary-fg-clr-hover: hsl(0, 0%, 80%);
+    --secondary-fg-clr-hover: hsl(196, 91%, 8%);
+    --primary-bg-clr-hover: hsl(208, 71%, 45%);
+    --tertiary-bg-clr-hover: hsl(207, 36%, 27%);
+    --apply-bg-clr-hover: hsl(207, 100%, 40%);
+    --cancel-bg-clr-hover: hsl(225, 14%, 13%);
+    --delete-bg-clr-hover: hsl(0, 75%, 43%);
 }

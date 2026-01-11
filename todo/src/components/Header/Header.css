@@ -13,21 +13,6 @@
     margin-left: 15px;
 }
 
-.settings-icon {
-    color: var(--primary-fg-clr);
-    font-size: 3em;
-    transition: all 0.5s ease;
-}   
-
-.settings-icon:hover {
-    color: var(--primary-fg-clr-hover);
-}
-
-.settings-btn {
-    margin-left: auto;
-    margin-right: 15px;
-}
-
 .header-container label {
     width: 100px;
     height: 50px;

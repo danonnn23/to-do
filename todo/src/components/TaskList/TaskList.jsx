@@ -1,34 +1,41 @@
 import './TaskList.css'
 import TaskItem from './TaskItem.jsx'
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 import CreateTaskModal from "./CreateTaskModal.jsx";
 
 function TaskList({}) {
     const [section, setSection] = useState("today");
     const [isCreateOpen, setIsCreateOpen] = useState(false);
-    const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            title: "Work",
-            description: "",
-            dueAt: "2025-12-29T13:45:00.000Z",
-            completed: false,
-        },
-        {
-            id: 2,
-            title: "Buy milk",
-            description: "1 pack only",
-            dueAt: "2025-12-30T17:15:00.000Z",
-            completed: false,
-        },
-        {
-            id: 3,
-            title: "Do homework",
-            description: "Math and English",
-            dueAt: "2025-12-31T13:00:00.000Z",
-            completed: false,
-        },
-    ]);
+    const [tasks, setTasks] = useState(() => {
+        const saved = localStorage.getItem("tasks");
+        return saved ? JSON.parse(saved) : [
+            {
+                id: 1,
+                title: "Water plants",
+                description: "In living room and bedroom",
+                dueAt: "2026-01-11T12:00:00.000Z",
+                completed: false,
+            },
+            {
+                id: 2,
+                title: "Make pasta",
+                description: "",
+                dueAt: "2026-01-11T17:00:00.000Z",
+                completed: false,
+            },
+            {
+                id: 3,
+                title: "Dentist",
+                description: "",
+                dueAt: "2026-01-11T12:00:00.000Z",
+                completed: false,
+            },
+        ];
+    });
+
+    useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }, [tasks]);
 
     function handleSaveTask(updatedTask) {
         setTasks(prev =>
